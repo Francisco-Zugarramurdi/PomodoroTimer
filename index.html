@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./ico.png">
+    <title>POMODORO TIMER by Francisco Zugarramurdi</title>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Pomodoro</h1>
+        <div class="main">
+            <article>
+                <h2>Your timer</h2>
+                <p id="mode"></p>
+                <div class="timer">
+                    Time:
+                    <p id="timer">
+
+                    </p>
+                    <div class="buttons">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="skip">Skip</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="custom">
+
+                <h2>Personalization</h2>
+                <form onsubmit="return false">
+                    <label>Work:
+                        <input type="number" name="Work" id="work" value="25">
+                        min
+                    </label>
+                    <label>Rest:
+                        <input type="number" name="Rest" id="rest" value="5">
+                        min
+                    </label>
+                    <label>Long rest:
+                        <input type="number" name="Long rest" id="long rest" value="30">
+                        min
+                    </label>
+                    <label>Long rest interval:
+                        <input type="number" name="Interval" id="interval" value="4">
+
+                    </label>
+                    </label>
+                    <button id="submit">Submit</button>
+                </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    </main>
+</body>
+
+</html>
